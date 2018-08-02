@@ -1,0 +1,14 @@
+docker run -p 8080:8080 -t springio/gs-spring-boot-docker
+
+docker images
+
+
+
+Start Mongo
+docker run -d -p 27017:27017 -v /data:/data/db mongo
+
+run mongo command line in container
+docker exec -it {container name} mongo
+
+get container ip address
+docker inspect <container id>
